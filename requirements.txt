@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+pandas
+numpy
+python-multipart
+google-genai
+sentence-transformers>=2.5.0
+language-tool-python>=2.7.0
+vaderSentiment>=3.3.2
+sentence-transformers
+torch

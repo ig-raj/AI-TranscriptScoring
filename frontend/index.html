@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nirmaan – Transcript Scoring Tool</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Nirmaan – AI Transcript Scoring</h1>
+    <p class="subtitle">
+      Paste a student's self-introduction transcript, enter the duration (seconds),
+      and click <strong>Score</strong>.
+    </p>
+
+    <label for="transcript">Transcript</label>
+    <textarea
+      id="transcript"
+      rows="10"
+      placeholder="Paste transcript here..."
+    ></textarea>
+
+    <label for="duration">Duration (seconds)</label>
+    <input
+      id="duration"
+      type="number"
+      min="1"
+      placeholder="Enter duration in seconds (default 52)"
+    />
+
+    <button id="scoreBtn">Score</button>
+
+    <div id="loading" class="hidden">Scoring... please wait.</div>
+    <div id="error" class="error hidden"></div>
+
+    <div id="results" class="hidden">
+      <h2>Results</h2>
+
+      <p><strong>Overall Score:</strong> <span id="overallScore"></span> / 100</p>
+      <p><strong>Word Count:</strong> <span id="wordCount"></span></p>
+      <p><strong>Sentence Count:</strong> <span id="sentenceCount"></span></p>
+      <p><strong>WPM:</strong> <span id="wpm"></span></p>
+
+      <h3>Per-criterion breakdown</h3>
+      <div id="criteriaTable"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
