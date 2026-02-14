@@ -1,5 +1,7 @@
 # AI Transcript Scoring Tool
 
+## Try Yourself : **https://huggingface.co/spaces/rajXchaos/transcript-scoring**
+
 A lightweight FastAPI + NLP based transcript scoring system for student self-introductions.
 
 ## Features
